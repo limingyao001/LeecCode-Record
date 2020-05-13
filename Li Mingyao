@@ -1,0 +1,7 @@
+1、日期隔多少天
+class Solution:
+    def daysBetweenDates(self, date1: str, date2: str) -> int:
+        from datetime import datetime as d
+        return abs((d.strptime(date2, "%Y-%m-%d") - d.strptime(date1, "%Y-%m-%d")).days)
+        
+2、
